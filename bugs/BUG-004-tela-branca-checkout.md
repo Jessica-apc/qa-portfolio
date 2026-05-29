@@ -58,8 +58,28 @@ Ao digitar qualquer caractere no campo "First Name", a tela fica completamente b
 
 **Resultado:** ❌ Não foi possível reproduzir o bug hoje
 
+## Informações atualizadas [29-05-2026 ás 14:03]
+
+| Campo | Valor |
+|-------|-------|
+| **Usuário onde o bug ocorre** | `problem_user` |
+| **Usuário onde NÃO ocorre** | `standard_user` |
+
+## Comportamento observado
+
+| Usuário | Comportamento do checkout |
+|---------|--------------------------|
+| `standard_user` | ✅ Funciona normalmente |
+| `problem_user` | ❌ Tela branca / trava |
+
+## Conclusão
+
+O bug de tela branca no checkout é específico do usuário `problem_user`. 
+O fluxo de checkout funciona corretamente com `standard_user`.
+
 **Passos seguidos:** [os mesmos de antes]
 
 **Comportamento observado:** O checkout funcionou normalmente
+
 
 **Status do bug:** Permanece como "Novo" - bug intermitente ou não reproduzível no momento
