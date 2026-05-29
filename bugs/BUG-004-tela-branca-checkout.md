@@ -53,3 +53,13 @@ Ao digitar qualquer caractere no campo "First Name", a tela fica completamente b
 ## Status atual
 
 **Novo** - Aguardando análise e atribuição para desenvolvedor
+
+## Tentativa de reprodução - [29-05-2026 ás 13:51]
+
+**Resultado:** ❌ Não foi possível reproduzir o bug hoje
+
+**Passos seguidos:** [os mesmos de antes]
+
+**Comportamento observado:** O checkout funcionou normalmente
+
+**Status do bug:** Permanece como "Novo" - bug intermitente ou não reproduzível no momento
