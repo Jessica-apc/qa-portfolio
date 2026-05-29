@@ -1,0 +1,37 @@
+# BUG-005 - Erros no Console durante checkout com problem_user
+
+## Informações gerais
+
+| Campo | Valor |
+|-------|-------|
+| **ID** | BUG-005 |
+| **Título** | Múltiplos erros no Console ao acessar checkout com problem_user |
+| **Gravidade** | Máxima |
+| **Status** | Novo |
+| **Usuário testado** | problem_user |
+| **Data** | [hoje] |
+
+## Erros encontrados no Console
+
+### Erro 1: JavaScript - insertBefore
+`NotFoundError: Failed to execute 'insertBefore' on 'Node'`
+
+### Erro 2: CORS Policy
+`Access to fetch blocked by CORS policy`
+
+### Erro 3: 503 Service Unavailable
+`POST net::ERR_FAILED 503 (Service Unavailable)`
+
+## Relação com BUG-004
+
+Estes erros ocorrem exatamente na página de checkout (`/checkout-step-one.html`), 
+que é onde o BUG-004 (tela branca) acontece.
+
+**Hipótese:** O site tenta se comunicar com `backtrace.io`, o servidor está fora do ar 
+(erro 503), o JavaScript falha (insertBefore) e a tela fica branca.
+
+## Conclusão
+O problema está relacionado a uma integração do SauceDemo com um serviço externo 
+que está indisponível.
+
+
