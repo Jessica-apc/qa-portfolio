@@ -1,4 +1,4 @@
-# qa-tests-saucedemo
+# qa-portfolio
 Documentação dos Bugs e Casos de testes dos meus estudos usando o site SauceDemo
 # Testes QA - SauceDemo
 
